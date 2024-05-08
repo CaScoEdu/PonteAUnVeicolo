@@ -16,14 +16,14 @@ public class Veicolo implements Runnable {
 
         try {
             System.out.println(targa + " sta arrivando al ponte");
-            ponte.entra();
+            ponte.entra(targa);
             
             TimeUnit.SECONDS.sleep(1);
             ponte.transita();
             System.out.println(targa + " sta passando il ponte");
 
             TimeUnit.SECONDS.sleep(2);
-            ponte.esci();
+            ponte.esci(targa);
             System.out.println(targa + " ha attraversato il ponte");
 
         } catch (InterruptedException e) {
