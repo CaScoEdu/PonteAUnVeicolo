@@ -2,7 +2,8 @@ public class Main {
      
     public static void main(String[] args) throws Exception {
 
-        final int MAX_VEICOLI_SUL_PONTE =1;
+        
+        final int MAX_VEICOLI_SUL_PONTE =3;
 
         Ponte ponte = new Ponte(MAX_VEICOLI_SUL_PONTE);
         
